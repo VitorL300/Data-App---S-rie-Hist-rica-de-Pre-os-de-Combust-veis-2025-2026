@@ -1,54 +1,40 @@
 # Data App - Série Histórica de Preços de Combustíveis (2025-2026)
 
-Uma aplicação interativa para análise exploratória de dados (EDA) e visualização da evolução dos preços da gasolina ao longo dos anos de 2025 e 2026.
+Uma aplicação web interativa desenvolvida com **Streamlit** para análise exploratória de dados (EDA) e visualização da evolução dos preços da gasolina ao longo dos anos de 2025 e 2026.
 
-## Funcionalidades Principais
+🚀 **Aplicação Online:** [Clique aqui para aceder ao Dashboard no Streamlit Cloud](https://data-app-combustiveis-25-26.streamlit.app) *(substitua pelo link real da sua app, caso seja diferente)*
 
-* **Visualização de Dados:** Gráficos interativos que demonstram a flutuação dos preços da gasolina.
-* **Análise Exploratória (EDA):** Ferramentas para compreender padrões, tendências e anomalias nos dados históricos.
-* **Interface Dinâmica:** Painel de controlo (dashboard) interativo gerado a partir do ficheiro `app.py`.
+## 🌟 Funcionalidades Principais
+* **Visualização de Dados:** Gráficos interativos (Plotly) que demonstram a flutuação dos preços.
+* **Análise Exploratória (EDA):** Ferramentas para compreender padrões e tendências nos dados históricos.
+* **Assistente de IA:** Integração com LangChain e OpenAI para interagir com o *dataframe* de forma inteligente.
+* **Interface Dinâmica:** Painel de controlo interativo e responsivo.
 
-## Tecnologias Utilizadas
-
+## 🛠️ Tecnologias Utilizadas
 * **Python**
-* **Streamlit / Pandas** *(Ajuste consoante as bibliotecas exatas que usou no `app.py`)*
-* **Git e GitHub** para controlo de versões
+* **Streamlit** (Criação da interface Web)
+* **Pandas** (Manipulação e análise de dados)
+* **Plotly** (Criação de gráficos interativos)
+* **LangChain & OpenAI** (Agente de IA para análise do *dataframe*)
+* **Git & GitHub** (Controlo de versões e *deploy*)
 
-## Estrutura do Repositório
-
+## 📂 Estrutura do Repositório
 * `app.py`: Código principal da aplicação web.
-* `.gitignore`: Ficheiro de configuração que impede o envio de dados sensíveis ou ficheiros pesados.
-* `data/`: Pasta designada para o armazenamento da base de dados local.
+* `requirements.txt`: Lista de todas as dependências e bibliotecas necessárias para correr o projeto e fazer o *deploy*.
+* `reduzir_dados.py`: Script utilizado para gerar uma amostra mais leve da base de dados original.
+* `data/gasolina_amostra.csv`: Base de dados reduzida (5.000 linhas) utilizada para demonstração no *deploy*.
+* `.gitignore`: Ficheiro de configuração para evitar o envio da base de dados completa e ficheiros sensíveis.
 
-> **Nota sobre os Dados:** O ficheiro original da base de dados (`gasolina_unique.csv`) possui cerca de 200 MB e não está incluído neste repositório devido aos limites de tamanho do GitHub. Para correr o projeto, é necessário descarregar a base de dados original e colocá-la na pasta `data/`.
+## ⚠️ Nota sobre os Dados (Deploy vs Local)
+Devido aos limites de armazenamento do GitHub, o ficheiro de dados original (`gasolina_unique.csv`, com cerca de 200 MB) **não está incluído** neste repositório. 
+A versão online da aplicação corre utilizando uma amostra de 5.000 linhas (`gasolina_amostra.csv`). 
 
-## Como Executar Localmente
+Se desejar correr o projeto localmente com a base de dados completa:
+1. Descarregue o ficheiro original e coloque-o na pasta `data/`.
+2. No ficheiro `app.py`, altere a função de leitura para: `df = pd.read_csv('data/gasolina_unique.csv', ...)`
+
+## 💻 Como Executar Localmente
 
 1. **Clone este repositório para a sua máquina:**
-```bash
-git clone https://github.com/VitorL300/Data-App---S-rie-Hist-rica-de-Pre-os-de-Combust-veis-2025-2026.git
-
-```
-
-
-2. **Aceda à pasta do projeto:**
-```bash
-cd Data-App---S-rie-Hist-rica-de-Pre-os-de-Combust-veis-2025-2026
-
-```
-
-
-3. **Configure a base de dados:**
-Crie uma pasta chamada `data` (caso não exista) e coloque o ficheiro `gasolina_unique.csv` no seu interior.
-4. **Execute a aplicação:**
-```bash
-python app.py
-
-```
-
-
-*(Se estiver a utilizar o Streamlit, substitua o comando por `streamlit run app.py`)*
-
----
-
-*Sinta-se à vontade para editar os nomes das bibliotecas ou adicionar um tópico sobre as variáveis de ambiente, caso volte a utilizar chaves de API num futuro ficheiro de testes.*
+   ```bash
+   git clone [https://github.com/VitorL300/Data-App---S-rie-Hist-rica-de-Pre-os-de-Combust-veis-2025-2026.git](https://github.com/VitorL300/Data-App---S-rie-Hist-rica-de-Pre-os-de-Combust-veis-2025-2026.git)
