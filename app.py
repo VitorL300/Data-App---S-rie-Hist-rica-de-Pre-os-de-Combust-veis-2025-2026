@@ -149,7 +149,7 @@ colunas_uteis = [
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('data/gasolina_unique.csv', usecols=colunas_uteis, sep=';', decimal=',', low_memory=False)
+    df = pd.read_csv('data/gasolina_amostra.csv', usecols=colunas_uteis, sep=';', decimal=',', low_memory=False)
     df = df.dropna(how='all')
     df['Data da Coleta'] = pd.to_datetime(df['Data da Coleta'], format='%d/%m/%Y', errors='coerce')
     df['Valor de Venda'] = pd.to_numeric(df['Valor de Venda'].astype(str).str.replace(',','.'), errors='coerce')
