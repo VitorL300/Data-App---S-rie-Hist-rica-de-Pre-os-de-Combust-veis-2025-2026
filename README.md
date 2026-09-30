@@ -12,7 +12,7 @@
 
 Uma aplicação web interativa desenvolvida com **Streamlit** para análise exploratória de dados (EDA) e visualização da evolução dos preços da gasolina ao longo dos anos de 2025 e 2026.
 
-🚀 **Aplicação Online:** [Clique aqui para aceder ao Dashboard no Streamlit Cloud](https://data-app-combustiveis-25-26.streamlit.app) *(substitua pelo link real da sua app, caso seja diferente)*
+🚀 **Aplicação Online:** [Clique aqui para aceder ao Dashboard no Streamlit Cloud](https://data-app-combustiveis-25-26.streamlit.app) 
 
 ## 🌟 Funcionalidades Principais
 * **Visualização de Dados:** Gráficos interativos (Plotly) que demonstram a flutuação dos preços.
