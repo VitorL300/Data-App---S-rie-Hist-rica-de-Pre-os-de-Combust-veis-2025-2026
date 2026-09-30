@@ -1,5 +1,15 @@
 # Data App - Série Histórica de Preços de Combustíveis (2025-2026)
 
+<img width="1920" height="800" alt="Captura de Tela (299)" src="https://github.com/user-attachments/assets/1e22d86f-86f1-4024-bd30-cd9a3ab35e21" />
+
+<img width="1920" height="816" alt="Captura de Tela (300)" src="https://github.com/user-attachments/assets/df8e5998-6ea7-4d23-9ec9-fbaed5d90cf1" />
+
+<img width="1920" height="816" alt="Captura de Tela (301)" src="https://github.com/user-attachments/assets/a2bd89f1-fb7b-4b4f-9905-2d18ce700455" />
+
+<img width="1920" height="804" alt="Captura de Tela (302)" src="https://github.com/user-attachments/assets/fb419583-d5d0-41e6-b31b-b63a153771af" />
+
+
+
 Uma aplicação web interativa desenvolvida com **Streamlit** para análise exploratória de dados (EDA) e visualização da evolução dos preços da gasolina ao longo dos anos de 2025 e 2026.
 
 🚀 **Aplicação Online:** [Clique aqui para aceder ao Dashboard no Streamlit Cloud](https://data-app-combustiveis-25-26.streamlit.app) *(substitua pelo link real da sua app, caso seja diferente)*
